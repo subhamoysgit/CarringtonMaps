@@ -47,7 +47,7 @@ def main():
 
   p = [carr_map[:,:,:k],carr_map_strk[:,:,:k],st,ex]
   pickle.dump(p,open(DIR+year+'/carr_map_video.p','wb'),protocol=4)
-  # Sum carr_map and carr_strk over a Carrinton Rotation (CR) period, 
+  # Sum carr_map*carr_strk and carr_strk over a Carrinton Rotation (CR) period, 
   # then divide the former with latter to produce the final map for a CR
   
 if __name__ == '__main__':
