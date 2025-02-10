@@ -12,7 +12,7 @@ rr = 256
 
 
 for i=0,359 do begin
-    for j=0,359 do begin
+for j=0,359 do begin
 lat=-90>0.5*(j-180.)<90   
 lon=-90>0.5*(i-180.)<90
 x_rot=round(rr*cos(!pi*lat/180.)*sin(!pi*lon/180.)) 
